@@ -1,0 +1,129 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+#calculator {
+  display: grid;
+  grid-template: repeat(4, 1fr);
+  width: 20%;
+  max-width: 375px;
+  min-width: 300px;
+  height: auto;
+  margin: auto;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 2%;
+}
+
+.button {
+  justify-self: stretch;
+  align-self: stretch;
+  justify-items: center;
+  align-items: center;
+  background-color: #F9A84F;
+  border: 1px solid black;
+  border-radius: 4%;
+  padding: 20px 25px;
+  margin: 5px;
+}
+
+.button:hover {
+  background-color: #F89223;
+}
+
+#equationBlock {
+  grid-column: 1 / 5;
+  grid-row: 1;
+  background-color: lightgrey;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 3%;
+  margin: 0 2%;
+}
+#displayEquationHere {
+  margin-top: 5%;
+  font-size: larger;
+  font-weight: bold;
+}
+#zero {
+  grid-column: 1;
+  grid-row: 5;
+}
+#one {
+  grid-column: 1;
+  grid-row: 4;
+}
+#two {
+  grid-column: 2;
+  grid-row: 4;
+}
+#three {
+  grid-column: 3;
+  grid-row: 4;
+}
+#four {
+  grid-column: 1;
+  grid-row: 3;
+}
+#five {
+  grid-column: 2;
+  grid-row: 3;
+}
+#six {
+  grid-column: 3;
+  grid-row: 3;
+}
+#seven {
+  grid-column: 1;
+  grid-row: 2;
+}
+#eight {
+  grid-column: 2;
+  grid-row: 2;
+}
+#nine {
+  grid-column: 3;
+  grid-row: 2;
+}
+#divide {
+  grid-column: 4;
+  grid-row: 2;
+}
+#multiply {
+  grid-column: 4;
+  grid-row: 3;
+}
+#subtract {
+  grid-column: 4;
+  grid-row: 4;
+}
+#add{
+  grid-column: 4;
+  grid-row: 5;
+}
+#clear {
+  grid-column: 2;
+  grid-row: 5;
+}
+#decimal {
+  grid-column: 3;
+  grid-row: 5;
+}
+#equals {
+  grid-column: 1/5;
+  grid-row: 6;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
